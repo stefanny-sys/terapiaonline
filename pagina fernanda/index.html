@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Adicione o script do Stripe no head -->
+    <script src="https://js.stripe.com/v3/"></script>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcação de Consulta</title>
+    <meta name="description" content="Descubra o poder da terapia com Fernanda Romano, PhD em Psicologia. Atendimento online, reembolso, e mais. Invista em sua saúde mental!">
+    <meta name="keywords" content="terapia, saúde mental, bem-estar emocional, Fernanda Romano, psicologia, atendimento online, reembolso, autoconhecimento">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #000; /* Preto */
+            color: #fff; /* Branco */
+        }
+
+        header {
+            background-color: #FFD700; /* Amarelo */
+            color: #000; /* Preto */
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        .page-border {
+            border: 5px solid #FFD700; /* Dourado */
+            padding: 20px;
+            border-radius: 15px;
+            background-color: #000; /* Preto */
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Branco com opacidade */
+        }
+
+        .therapist-section {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .therapist-image {
+            border-radius: 50%;
+            margin-right: 20px;
+            border: 3px solid #FFD700; /* Amarelo */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Branco com opacidade */
+        }
+
+        .therapist-text {
+            flex: 1;
+        }
+
+        .online-section,
+        .what-is-therapy-section,
+        .why-therapy-section,
+        .reimbursement-section,
+        .values-section,
+        .payment-section,
+        .buttons-section {
+            margin: 20px 0;
+        }
+
+        .cta-button {
+            background-color: #FFD700; /* Amarelo */
+            color: #000; /* Preto */
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin-right: 10px;
+        }
+
+        .cta-button:hover {
+            background-color: #FFA500; /* Laranja ao passar o mouse */
+        }
+
+        .whatsapp-button {
+            background-color: #25D366; /* Verde WhatsApp */
+            color: #fff; /* Branco */
+        }
+
+        .instagram-button {
+            background-color: #E4405F; /* Vermelho Instagram */
+            color: #fff; /* Branco */
+        }
+        
+        .values-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .values-section li {
+            margin-bottom: 10px;
+        }
+
+        .payment-section h2 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Descubra o Poder da Terapia</h1>
+        <p>Transforme sua vida através do apoio emocional</p>
+    </header>
+
+    <div class="page-border">
+        <div class="therapist-section">
+            <img src="fernanda.jpg.jpeg" alt="Foto de Fernanda Romano" class="therapist-image" width="120" height="120">
+            <div class="therapist-text">
+                <h2>Sobre a Terapeuta - Fernanda Romano</h2>
+                <p>Fernanda Romano, PhD em Psicologia, é uma profissional dedicada a guiar indivíduos em sua jornada para o bem-estar emocional. Com uma abordagem acolhedora e baseada em evidências, Fernanda tem ajudado pessoas a alcançarem sua melhor versão. Sua vasta experiência acadêmica e prática clínica proporciona um ambiente de apoio, promovendo o autoconhecimento e o desenvolvimento pessoal.</p>
+            </div>
+        </div>
+
+        <div class="online-section">
+            <h2>Atendimento Online</h2>
+            <p>Oferecemos atendimento online via Zoom ou outras plataformas de vídeo chamada. A terapia online proporciona a flexibilidade de receber suporte no conforto da sua casa. Agende sua consulta hoje e dê o primeiro passo em direção ao seu bem-estar.</p>
+        </div>
+
+        <div class="what-is-therapy-section">
+            <h2>O que é a Terapia?</h2>
+            <p>A terapia é um espaço seguro e colaborativo onde indivíduos podem explorar seus pensamentos, sentimentos e comportamentos. Orientada por profissionais qualificados, a terapia visa promover a compreensão profunda de si mesmo, auxiliando na resolução de desafios emocionais, traumas passados e no desenvolvimento de estratégias para enfrentar as dificuldades presentes. É um processo de autoconhecimento que capacita as pessoas a viverem vidas mais plenas e significativas.</p>
+        </div>
+
+        <div class="why-therapy-section">
+            <h2>Por que Procurar a Terapia?</h2>
+            <p>A terapia não é apenas para lidar com crises; é uma ferramenta valiosa para o crescimento pessoal contínuo. Ao buscar terapia, você investe em sua saúde mental e emocional, prevenindo o agravamento de problemas, como ansiedade, depressão e estresse. Além disso, a terapia pode fortalecer relacionamentos, melhorar a autoestima e proporcionar as habilidades necessárias para enfrentar os desafios da vida de maneira construtiva.</p>
+        </div>
+
+        <div class="reimbursement-section">
+            <h2>Reembolso e Notas Fiscais</h2>
+            <p>Facilitamos o processo de reembolso! Emissão de notas fiscais disponível para garantir que você possa solicitar reembolso do seu plano de saúde. Cuide da sua saúde mental com comodidade e aproveite o seu reembolso do valor da sua consulta.</p>
+        </div>
+
+                <div class="values-section">
+            <h2>Valores</h2>
+            <ul>
+                <li>Valor Individual por Consulta: R$ 120,00</li>
+                <li>Pacote Mensal (4 Consultas): R$ 400,00</li>
+            </ul>
+        </div>
+
+        <div class="payment-section">
+            <h2>Formas de Pagamento</h2>
+            <p>Facilitamos o processo de pagamento pelo cartão de crédito ou pix.</p>
+        </div>
+
+        <div class="buttons-section">
+            <!-- Botão de Agendamento -->
+            <a href="https://wa.me/5521998426888" class="cta-button whatsapp-button">
+                Agendar via WhatsApp
+            </a>
+
+            <!-- Botão de Redes Sociais -->
+            <a href="https://www.instagram.com/feromano_" class="cta-button instagram-button">
+                Conheça nossas Redes Sociais
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
